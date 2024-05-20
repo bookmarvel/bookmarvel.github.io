@@ -1,0 +1,62 @@
+/***********************************************************************************************************
+    General CSS file for overall website styling
+************************************************************************************************************/
+
+
+/* all */
+:root {
+    --menu-background: #5083BE;
+    --menu-highlight-selected: #336aa8;
+    --menu-highlight-hover: #79afee;
+}
+
+
+/* row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* navigation bar */
+nav {
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    background-color: var(--menu-background);
+    padding: 0 10px; 
+    position: sticky;
+    top: 0; 
+    width: 100%; 
+    z-index: 10; 
+}
+
+
+nav a {
+    color: #FFF;
+    padding: 25px 18px;
+    text-decoration: none;
+    flex-grow: 1; 
+    text-align: center; 
+    transition: background-color 0.3s ease; 
+}
+
+
+nav a:hover {
+    background-color: var(--menu-highlight-hover);
+    color: #000;
+}
+
+
+nav a.current {
+    background-color: var(--menu-highlight-selected);
+    color: #FFF;
+}
+
+
+/* footer */
+footer {
+    background-color: #9ccaff;
+    padding: 10px;
+    margin: 5px
+}
