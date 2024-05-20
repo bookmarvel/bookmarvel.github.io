@@ -1,4 +1,8 @@
-# bookmarvel.github.io
+<!-- *******************************************************************************************************
+    README file for the repository
+******************************************************************************************************** -->
+
+# [bookmarvel.github.io](https://bookmarvel.github.io/)
 
 This is a website I made to showcase my various creations including programming projects, photography, drawings/paintings, and textile arts such as crochet.
 
