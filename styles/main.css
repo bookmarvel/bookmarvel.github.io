@@ -5,9 +5,16 @@
 
 /* all */
 :root {
-    --menu-background: #5083BE;
-    --menu-highlight-selected: #336aa8;
-    --menu-highlight-hover: #79afee;
+    /* color palette generated using coolors.co */
+    --pistachio: #8dc185ff;
+    --british-racing-green: #003e1fff;  /* can use for text */
+    --dartmouth-green: #006633ff;
+    --jade: #5ba66fff;
+    --sea-green: #388053ff;
+    --ghost-white: #f8f4f9ff;
+    --marian-blue: #364981ff;
+    --air-force-blue: #5f88abff;
+
 }
 
 
@@ -23,7 +30,7 @@ nav {
     display: flex;
     justify-content: space-around;  
     align-items: center;
-    background-color: var(--menu-background);
+    background-color: var(--dartmouth-green);
     padding: 0 10px; 
     position: sticky;
     top: 0; 
@@ -42,21 +49,21 @@ nav a {
 }
 
 
-nav a:hover {
-    background-color: var(--menu-highlight-hover);
+nav a.current {
+    background-color: var(--jade);
     color: #000;
 }
 
 
-nav a.current {
-    background-color: var(--menu-highlight-selected);
+nav a:hover {
+    background-color: var(--sea-green);
     color: #FFF;
 }
 
 
 /* footer */
 footer {
-    background-color: #9ccaff;
+    background-color: var(--air-force-blue);
     padding: 10px;
     margin: 5px
 }
