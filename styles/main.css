@@ -17,29 +17,59 @@
 
 }
 
+/* overall page layouts */
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+
+#page-content {
+    padding-top: 3rem;       /* nav bar height */
+    padding-bottom: 4rem;    /* footer height */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;            /* footer height */
+    background-color: var(--air-force-blue);
+}
+
+#footer-content {
+    padding: 8px 10px;
+}
+
 
 /* row */
-.row {
+.row {                          /* class="row" */
     display: flex;
     flex-wrap: wrap;
 }
 
 
 /* navigation bar */
-nav {
+
+nav {                           /* <nav> */
     display: flex;
     justify-content: space-around;  
     align-items: center;
     background-color: var(--dartmouth-green);
-    padding: 0 10px; 
-    position: sticky;
+    /* padding: 0 10px;   */
+    position: absolute;
     top: 0; 
+    /* height: 3rem; */
     width: 100%; 
     z-index: 10; 
 }
 
 
-nav a {
+nav a {                         /* <a> in <nav> */
     color: #FFF;
     padding: 25px 18px;
     text-decoration: none;
@@ -49,21 +79,38 @@ nav a {
 }
 
 
-nav a.current {
+nav a.current {                 /* <a> in <nav> with class="current" */
     background-color: var(--jade);
     color: #000;
 }
 
 
-nav a:hover {
+nav a:hover {                   /* <a> in <nav> when a hover happens*/
     background-color: var(--sea-green);
     color: #FFF;
 }
 
 
-/* footer */
-footer {
-    background-color: var(--air-force-blue);
-    padding: 10px;
-    margin: 5px
-}
+/* photo gallery */
+/* adapted from www.w3schools.com/css/css_image_gallery.asp */
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
